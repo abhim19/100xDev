@@ -46,22 +46,67 @@
 // console.log(sum(10,20));
 
 
-function sum(num1,num2, callback) {
-    let result=num1+num2;
-    callback(result);
-}
 
-function displayResult(data) {
-    console.log("Result of the sum is: "+data);
-}
+// Callback Functions
+// function sum(num1,num2, callback) {
+//     let result=num1+num2;
+//     callback(result);
+// }
 
-function displayResultPassive(data) {
-    console.log("Sum's result is: "+data);
-}
+// function displayResult(data) {
+//     console.log("Result of the sum is: "+data);
+// }
+
+// function displayResultPassive(data) {
+//     console.log("Sum's result is: "+data);
+// }
+// const ans = sum(2, 4, displayResultPassive)
 
 
-const ans = sum(2, 4, displayResultPassive)
+
+
+//Callback Example 2
+// function calculator(a, b, callback) {
+//     console.log(callback(a,b));
+// }
+
+// function sum(a, b) {
+//     return a + b;
+// }
+// function sub(a, b) {
+//     return a - b;
+// }
+// function mul(a, b) {
+//     return a * b;
+// }
+// function div(a, b) {
+//     return a / b;
+// }
+// calculator(2,4, sum);
+
+
+//setTimeout & setInterval Example
+// function greet() {
+//     console.log("Hello World");
+// }
+// setTimeout(greet, 3*1000);
+// setInterval(greet, 2000);
 
 
 
+//Async functions
+
+// function findSum(n) {
+//     let ans = 0;
+//     for (let i=0; i<=n; i++) {
+//         ans += i;
+//     }
+//     return ans;
+// }
+// function findSumTill100() {
+//     console.log(findSum(100));
+//   }
+
+// setTimeout(findSumTill100, 1000)
+// console.log("Hello World"); 
 
